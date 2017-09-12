@@ -2,7 +2,7 @@ package Clients;
 
 import Messages.ATPMsg;
 import Messages.MyMessageType;
-import System.MyApplicationId;
+import System.SystemApplicationId;
 import System.ChannelManager;
 import System.Client;
 import System.VA_DEBUG;
@@ -21,7 +21,7 @@ public class Audio
     extends Client
 {
     public Audio() {
-        super(MyApplicationId.AUDIO);
+        super(SystemApplicationId.AUDIO);
     }
 
     @Override
@@ -78,7 +78,7 @@ public class Audio
             return false;
         }
         
-        if (!manager.isClientRegistered(MyApplicationId.AUDIO))
+        if (!manager.isClientRegistered(SystemApplicationId.AUDIO))
         {
             VA_DEBUG.WARNING("[AUDIO] MEMORY is not registered.", true);
             return false;
