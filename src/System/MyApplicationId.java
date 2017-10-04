@@ -10,8 +10,8 @@ package System;
  *
  * @author ASimionescu
  */
-public enum SystemApplicationId
-    implements ApplicationId
+public class MyApplicationId
+    extends ApplicationId
 {
-    AUDIO
+    public static final int AUDIO = 100;
 }
