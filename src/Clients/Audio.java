@@ -98,7 +98,8 @@ public class Audio
     }
 
     @Override
-    public void update(Observable o, Object arg) {
+    public void update(Observable o, Object arg)
+    {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -110,7 +111,8 @@ public class Audio
         switch(state)
         {
             case ONOFF_STATE_STARTUP_POLLING:
-            {    
+            {
+                
                 break;
             }
             case ONOFF_STATE_NORMAL:
